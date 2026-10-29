@@ -112,7 +112,7 @@ public class MainActivity extends Activity {
         CookieManager cookies = CookieManager.getInstance();
         cookies.setAcceptCookie(true);
         cookies.setAcceptThirdPartyCookies(webView, true);
-        WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
+        WebView.setWebContentsDebuggingEnabled(true);
         webView.addJavascriptInterface(nativeDownloads, "HajalaNative");
 
         WebViewAssetLoader assetLoader = new WebViewAssetLoader.Builder()
